@@ -18,10 +18,21 @@ public class LoginActivity<btnLogin> extends AppCompatActivity {
 
         btnLogin = findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(LoginActivity.this, HomeActivity.class);
+                startActivity(i);
+            }
         });
-        {
-            Intent i = new Intent(LoginActivity.this,HomeActivity.class);
-            startActivity(i);
-    }
 
+        btnRegister = findViewById(R.id.btnRegister);
+        btnRegister.setOnClickListener(new View.OnClickListener()
+
+        {
+            Intent i = new Intent(LoginActivity.this, HomeActivity.class);
+            startActivity(i);
+        }
+
+    }
 }
+
