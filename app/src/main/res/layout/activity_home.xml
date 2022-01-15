@@ -8,12 +8,6 @@
     tools:context=".HomeActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/btntopup" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/botomnav"
         android:layout_width="match_parent"
@@ -26,16 +20,19 @@
         app:labelVisibilityMode="auto"
         app:menu="@menu/bottomnav" />
 
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
+        android:layout_marginStart="-2dp"
         android:layout_marginTop="0dp"
-        android:layout_marginBottom="484dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="485dp"
         app:srcCompat="@drawable/bgcard" />
 
     <ImageView
@@ -60,10 +57,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="198dp"
-        android:layout_marginEnd="153dp"
-        android:layout_marginBottom="425dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="426dp"
         app:srcCompat="@drawable/btntransfer" />
 
     <ImageView
@@ -108,7 +105,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/tvwelcome2"
+        android:id="@+id/tvwelcome1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/hello"
@@ -125,7 +122,7 @@
         android:textSize="15sp" />
 
     <TextView
-        android:id="@+id/tvwelcome"
+        android:id="@+id/tvwelcome2"
         android:layout_width="298dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/hello"
@@ -136,7 +133,6 @@
         android:layout_marginTop="44dp"
         android:layout_marginEnd="81dp"
         android:layout_marginBottom="567dp"
-        android:autoSizeTextType="uniform"
         android:fontFamily="@font/poppins_regular"
         android:text="Rp. 200.000 "
         android:textColor="@color/white"

@@ -73,7 +73,7 @@
             android:paddingLeft="17dp"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
-            android:textColor="#FF9800"
+            android:textColor="@color/black"
             android:textColorHint="#7E7E7E"
             android:textCursorDrawable="@drawable/putih"
             android:textSize="12sp" />
@@ -106,7 +106,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="-1dp"
+            android:layout_marginLeft="0dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="7dp"
             android:layout_toRightOf="@+id/icon"

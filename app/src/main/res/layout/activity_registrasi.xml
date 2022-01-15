@@ -7,6 +7,14 @@
     android:background="@color/white"
     tools:context=".RegistrasiActivity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/bulatatas"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -16,12 +24,17 @@
         app:srcCompat="@drawable/bulatbawah" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:cropToPadding="true"
-        app:srcCompat="@drawable/bulatatas" />
+        android:id="@+id/imageView"
+        android:layout_width="82dp"
+        android:layout_height="78dp"
+        android:src="@drawable/logogomoneyungu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -32,39 +45,16 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
-        <LinearLayout
-            android:layout_width="373dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="150dp"
-                android:layout_marginEnd="5dp"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Register Your Account Here"
-                android:textColor="#404040"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.174"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </LinearLayout>
-
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="62dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="190dp"
             android:layout_marginRight="62dp"
             android:background="@drawable/putih">
 
             <EditText
-                android:id="@+id/etEmail"
+                android:id="@+id/etEmail1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/email_icon"
@@ -145,7 +135,7 @@
             android:background="@drawable/putih">
 
             <EditText
-                android:id="@+id/etPassword"
+                android:id="@+id/etPassword1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/password_icon"
@@ -181,10 +171,12 @@
             android:layout_marginRight="62dp"
             android:background="@drawable/putih">
 
+
             <EditText
                 android:id="@+id/etConfirm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
                 android:layout_toRightOf="@+id/confirm_icon"
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/poppins_regular"
@@ -198,7 +190,6 @@
                 android:textColorHint="#7E7E7E"
                 android:textCursorDrawable="@drawable/putih"
                 android:textSize="12sp" />
-
 
             <ImageView
                 android:id="@+id/confirm_icon"
@@ -219,7 +210,7 @@
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnRegister"
+                android:id="@+id/btnRegister1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -252,7 +243,5 @@
 
 
         </LinearLayout>
-
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

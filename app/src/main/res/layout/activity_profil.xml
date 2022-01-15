@@ -7,7 +7,7 @@
     tools:context=".ProfilActivity">
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnLogout"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -28,7 +28,7 @@
         app:layout_constraintVertical_bias="0.778" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/botomnav"
+        android:id="@+id/botomnav1"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"

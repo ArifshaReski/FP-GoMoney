@@ -7,4 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".ScannerActivity">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:id="@+id/botomnav2"
+      android:layout_width="match_parent"
+      android:layout_height="70dp"
+      android:layout_alignParentBottom="true"
+      android:background="@color/backgroundcolorsplash"
+      app:itemIconTint="@color/white"
+      app:itemTextColor="@color/white"
+      app:labelVisibilityMode="auto"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="1.0"
+      app:menu="@menu/bottomnav"
+      tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
